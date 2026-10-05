@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MELORA — Made to Melt Moments.</title>
+    <meta name="description" content="MELORA premium chocolate — crafted from fine cocoa, rich flavours and unforgettable moments.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+<!-- =========================================================
+     LOADER
+========================================================= -->
+
+<div class="loader" id="loader">
+    <div class="loader-logo">MELORA</div>
+    <div class="loader-line">
+        <span></span>
+    </div>
+    <small>CRAFTED TO MELT</small>
+</div>
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <nav class="navbar">
+
+        <a href="#home" class="nav-logo">MELORA</a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#experience">Experience</a>
+            <a href="#collection">Collection</a>
+            <a href="#story">Our Story</a>
+            <a href="#ingredients">Ingredients</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+
+            <button class="nav-icon" id="searchOpen" aria-label="Search">
+                ⌕
+            </button>
+
+            <button class="nav-icon" id="wishlistOpen" aria-label="Wishlist">
+                ♡
+                <span class="nav-count" id="wishlistCount">0</span>
+            </button>
+
+            <button class="nav-icon" id="cartOpen" aria-label="Shopping cart">
+                🛒
+                <span class="nav-count" id="cartCount">0</span>
+            </button>
+
+            <button class="nav-icon profile-button" id="profileOpen" aria-label="Profile">
+                ◯
+            </button>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section id="home" class="hero">
+
+    <video
+        id="heroVideo"
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-label="MELORA cinematic chocolate experience"
+    >
+        <source src="melora-hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-particles" id="heroParticles"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-brand">MELORA</div>
+
+        <h1>Made to Melt<br><em>Moments.</em></h1>
+
+        <p>
+            Discover a world crafted from fine cocoa,
+            rich flavours and unforgettable moments.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="luxury-btn gold-btn" id="exploreBtn">
+                EXPLORE MELORA
+            </button>
+
+            <button class="luxury-btn outline-btn" id="shopBtn">
+                SHOP COLLECTION
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span>SCROLL TO DISCOVER</span>
+        <div class="scroll-line"></div>
+    </div>
+
+</section>
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section class="section experience" id="experience">
+
+    <div class="section-heading reveal">
+
+        <span class="eyebrow">THE MELORA JOURNEY</span>
+
+        <h2>
+            From cocoa bean<br>
+            <em>to melting moment.</em>
+        </h2>
+
+        <p>
+            Every MELORA experience begins with carefully selected cocoa
+            and ends with a moment worth remembering.
+        </p>
+
+    </div>
+
+    <div class="journey-grid">
+
+        <article class="journey-card reveal">
+            <div class="journey-number">01</div>
+            <div class="cocoa-orb"></div>
+            <span>ORIGIN</span>
+            <h3>Born from the finest cocoa.</h3>
+            <p>
+                Carefully sourced cocoa creates the foundation
+                for every MELORA creation.
+            </p>
+        </article>
+
+        <article class="journey-card reveal">
+            <div class="journey-number">02</div>
+            <div class="factory-visual">
+                <div class="factory-column"></div>
+                <div class="factory-column"></div>
+                <div class="factory-column"></div>
+            </div>
+            <span>CRAFT</span>
+            <h3>Slowly crafted with precision.</h3>
+            <p>
+                Roasting, refining and tempering are balanced
+                to create a remarkably smooth finish.
+            </p>
+        </article>
+
+        <article class="journey-card reveal">
+            <div class="journey-number">03</div>
+            <div class="melt-visual">
+                <div></div>
+            </div>
+            <span>MOMENT</span>
+            <h3>Made to melt into memory.</h3>
+            <p>
+                One square. One bite. One unforgettable
+                chocolate moment.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FLAVOURS
+========================================================= -->
+
+<section class="section flavours" id="flavours">
+
+    <div class="section-heading reveal">
+
+        <span class="eyebrow">SIGNATURE FLAVOURS</span>
+
+        <h2>
+            A language of<br>
+            <em>flavour.</em>
+        </h2>
+
+    </div>
+
+    <div class="flavour-track">
+
+        <article class="flavour-card dark-chocolate reveal">
+
+            <div class="flavour-art">
+                <div class="flavour-bar"></div>
+            </div>
+
+            <span>01</span>
+            <h3>Midnight 72%</h3>
+            <p>Deep cocoa · toasted notes · elegant finish</p>
+
+            <button class="text-btn" data-product="Midnight 72%">
+                Discover →
+            </button>
+
+        </article>
+
+        <article class="flavour-card caramel-chocolate reveal">
+
+            <div class="flavour-art">
+                <div class="flavour-bar"></div>
+            </div>
+
+            <span>02</span>
+            <h3>Golden Caramel</h3>
+            <p>Velvety caramel · sea salt · milk chocolate</p>
+
+            <button class="text-btn" data-product="Golden Caramel">
+                Discover →
+            </button>
+
+        </article>
+
+        <article class="flavour-card berry-chocolate reveal">
+
+            <div class="flavour-art">
+                <div class="flavour-bar"></div>
+            </div>
+
+            <span>03</span>
+            <h3>Velvet Berry</h3>
+            <p>Dark cocoa · red berry · silky ganache</p>
+
+            <button class="text-btn" data-product="Velvet Berry">
+                Discover →
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     BREAK THE BAR
+========================================================= -->
+
+<section class="break-section" id="breakBar">
+
+    <div class="break-copy reveal">
+
+        <span class="eyebrow">THE RITUAL</span>
+
+        <h2>
+            Break the bar.<br>
+            <em>Begin the moment.</em>
+        </h2>
+
+        <p>
+            Move your cursor across the bar and discover
+            the satisfying architecture of MELORA.
+        </p>
+
+        <button class="luxury-btn gold-btn" id="breakButton">
+            BREAK THE BAR
+        </button>
+
+    </div>
+
+    <div class="interactive-bar-area">
+
+        <div class="chocolate-bar" id="chocolateBar">
+
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+            <div class="bar-piece"></div>
+
+        </div>
+
+        <div class="break-message" id="breakMessage">
+            <span>CRACK</span>
+            <strong>A LITTLE PIECE OF HAPPINESS.</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     COLLECTION
+========================================================= -->
+
+<section class="section collection" id="collection">
+
+    <div class="section-heading reveal">
+
+        <span class="eyebrow">THE COLLECTION</span>
+
+        <h2>
+            Choose your<br>
+            <em>moment.</em>
+        </h2>
+
+        <p>
+            Crafted for quiet evenings, celebrations,
+            thoughtful gifts and everything between.
+        </p>
+
+    </div>
+
+    <div class="products-grid">
+
+        <article class="product-card reveal"
+                 data-id="midnight"
+                 data-name="Midnight 72%"
+                 data-price="24">
+
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+            <div class="product-visual product-dark">
+                <div class="product-pack">
+                    <small>MELORA</small>
+                    <strong>MIDNIGHT</strong>
+                    <span>72% CACAO</span>
+                </div>
+            </div>
+
+            <div class="product-info">
+
+                <div>
+                    <span class="product-category">DARK CHOCOLATE</span>
+                    <h3>Midnight 72%</h3>
+                </div>
+
+                <strong>$24</strong>
+
+            </div>
+
+            <p>Deep cocoa · toasted almond · elegant finish</p>
+
+            <div class="product-actions">
+
+                <button class="quick-view"
+                        data-product="Midnight 72%">
+                    QUICK VIEW
+                </button>
+
+                <button class="add-cart">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+        </article>
+
+        <article class="product-card reveal"
+                 data-id="caramel"
+                 data-name="Golden Caramel"
+                 data-price="28">
+
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+            <div class="product-visual product-gold">
+                <div class="product-pack">
+                    <small>MELORA</small>
+                    <strong>GOLDEN</strong>
+                    <span>CARAMEL</span>
+                </div>
+            </div>
+
+            <div class="product-info">
+
+                <div>
+                    <span class="product-category">MILK CHOCOLATE</span>
+                    <h3>Golden Caramel</h3>
+                </div>
+
+                <strong>$28</strong>
+
+            </div>
+
+            <p>Sea salt · golden caramel · silky milk chocolate</p>
+
+            <div class="product-actions">
+
+                <button class="quick-view"
+                        data-product="Golden Caramel">
+                    QUICK VIEW
+                </button>
+
+                <button class="add-cart">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+        </article>
+
+        <article class="product-card reveal"
+                 data-id="berry"
+                 data-name="Velvet Berry"
+                 data-price="30">
+
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+            <div class="product-visual product-berry">
+                <div class="product-pack">
+                    <small>MELORA</small>
+                    <strong>VELVET</strong>
+                    <span>BERRY</span>
+                </div>
+            </div>
+
+            <div class="product-info">
+
+                <div>
+                    <span class="product-category">SIGNATURE GANACHE</span>
+                    <h3>Velvet Berry</h3>
+                </div>
+
+                <strong>$30</strong>
+
+            </div>
+
+            <p>Dark cocoa · red berries · velvet ganache</p>
+
+            <div class="product-actions">
+
+                <button class="quick-view"
+                        data-product="Velvet Berry">
+                    QUICK VIEW
+                </button>
+
+                <button class="add-cart">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+        </article>
+
+        <article class="product-card reveal"
+                 data-id="hazelnut"
+                 data-name="Hazelnut Nocturne"
+                 data-price="26">
+
+            <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+            <div class="product-visual product-hazelnut">
+                <div class="product-pack">
+                    <small>MELORA</small>
+                    <strong>NOCTURNE</strong>
+                    <span>HAZELNUT</span>
+                </div>
+            </div>
+
+            <div class="product-info">
+
+                <div>
+                    <span class="product-category">PREMIUM DARK</span>
+                    <h3>Hazelnut Nocturne</h3>
+                </div>
+
+                <strong>$26</strong>
+
+            </div>
+
+            <p>Roasted hazelnut · cocoa · soft praline</p>
+
+            <div class="product-actions">
+
+                <button class="quick-view"
+                        data-product="Hazelnut Nocturne">
+                    QUICK VIEW
+                </button>
+
+                <button class="add-cart">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CREATE YOUR MELORA
+========================================================= -->
+
+<section class="create-section" id="create">
+
+    <div class="create-inner">
+
+        <div class="section-heading reveal">
+
+            <span class="eyebrow">CREATE YOUR MELORA</span>
+
+            <h2>
+                Your chocolate.<br>
+                <em>Your mood.</em>
+            </h2>
+
+            <p>
+                Build your own custom MELORA box.
+                Choose the flavour, finish and message.
+            </p>
+
+        </div>
+
+        <div class="creator">
+
+            <div class="creator-preview">
+
+                <div class="custom-box" id="customBox">
+
+                    <div class="custom-box-logo">MELORA</div>
+                    <div class="custom-box-name" id="boxPreviewName">
+                        YOUR MOMENT
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="creator-controls">
+
+                <label>
+                    Name on box
+                    <input
+                        id="boxName"
+                        type="text"
+                        maxlength="24"
+                        placeholder="YOUR MOMENT"
+                    >
+                </label>
+
+                <label>
+                    Chocolate
+                    <select id="boxFlavor">
+                        <option value="Midnight">Midnight 72%</option>
+                        <option value="Caramel">Golden Caramel</option>
+                        <option value="Berry">Velvet Berry</option>
+                        <option value="Hazelnut">Hazelnut Nocturne</option>
+                    </select>
+                </label>
+
+                <label>
+                    Box size
+                    <select id="boxSize">
+                        <option value="small">6 Pieces — $18</option>
+                        <option value="medium">12 Pieces — $32</option>
+                        <option value="large">24 Pieces — $56</option>
+                    </select>
+                </label>
+
+                <button class="luxury-btn gold-btn" id="createBoxBtn">
+                    ADD CUSTOM BOX
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     STORY
+========================================================= -->
+
+<section class="story-section" id="story">
+
+    <div class="story-visual">
+
+        <div class="story-circle circle-one"></div>
+        <div class="story-circle circle-two"></div>
+
+        <div class="story-emblem">
+            M
+        </div>
+
+    </div>
+
+    <div class="story-copy reveal">
+
+        <span class="eyebrow">OUR STORY</span>
+
+        <h2>
+            Chocolate is more<br>
+            than a flavour.
+        </h2>
+
+        <p>
+            MELORA was imagined around a simple belief:
+            the best chocolate doesn't simply satisfy a craving.
+            It creates a pause.
+        </p>
+
+        <p>
+            A conversation. A celebration.
+            A quiet evening. A shared smile.
+            A small moment that becomes part of something bigger.
+        </p>
+
+        <button class="text-btn" id="storyButton">
+            READ OUR STORY →
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     WHY MELORA
+========================================================= -->
+
+<section class="section why-section" id="why">
+
+    <div class="section-heading reveal">
+
+        <span class="eyebrow">WHY MELORA</span>
+
+        <h2>
+            Crafted with<br>
+            <em>intention.</em>
+        </h2>
+
+    </div>
+
+    <div class="why-grid">
+
+        <article class="why-card reveal">
+            <span>01</span>
+            <h3>Thoughtful Cocoa</h3>
+            <p>Selected for depth, aroma and natural character.</p>
+        </article>
+
+        <article class="why-card reveal">
+            <span>02</span>
+            <h3>Slow Craft</h3>
+            <p>Every stage is carefully balanced for texture and flavour.</p>
+        </article>
+
+        <article class="why-card reveal">
+            <span>03</span>
+            <h3>Elegant Flavour</h3>
+            <p>Layered profiles designed to evolve with every bite.</p>
+        </article>
+
+        <article class="why-card reveal">
+            <span>04</span>
+            <h3>Made for Moments</h3>
+            <p>Because the best chocolate should become part of your story.</p>
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     INGREDIENTS
+========================================================= -->
+
+<section class="ingredients-section" id="ingredients">
+
+    <div class="ingredient-content reveal">
+
+        <span class="eyebrow">THE INGREDIENTS</span>
+
+        <h2>
+            Nothing unnecessary.<br>
+            <em>Everything intentional.</em>
+        </h2>
+
+        <div class="ingredient-list">
+
+            <div>
+                <strong>COCOA</strong>
+                <span>Deep · aromatic · balanced</span>
+            </div>
+
+            <div>
+                <strong>CACAO BUTTER</strong>
+                <span>Silky · clean · smooth</span>
+            </div>
+
+            <div>
+                <strong>SEA SALT</strong>
+                <span>Bright · delicate · precise</span>
+            </div>
+
+            <div>
+                <strong>VANILLA</strong>
+                <span>Warm · subtle · fragrant</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     REVIEWS
+========================================================= -->
+
+<section class="section reviews-section" id="reviews">
+
+    <div class="section-heading reveal">
+
+        <span class="eyebrow">MELORA MOMENTS</span>
+
+        <h2>
+            Loved one<br>
+            <em>moment at a time.</em>
+        </h2>
+
+    </div>
+
+    <div class="reviews-slider">
+
+        <article class="review active">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+                “The Midnight bar has the kind of finish
+                that makes you stop and take another bite.”
+            </blockquote>
+            <span>— AMELIA R.</span>
+        </article>
+
+        <article class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+                “Golden Caramel disappeared far too quickly.
+                Absolutely beautiful.”
+            </blockquote>
+            <span>— SOFIA M.</span>
+        </article>
+
+        <article class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>
+                “Beautiful packaging, rich flavour,
+                and genuinely memorable.”
+            </blockquote>
+            <span>— DANIEL K.</span>
+        </article>
+
+    </div>
+
+    <div class="review-controls">
+        <button id="reviewPrev">←</button>
+        <button id="reviewNext">→</button>
+    </div>
+
+</section>
+
+<!-- =========================================================
+     SPECIAL OFFER
+========================================================= -->
+
+<section class="offer-section">
+
+    <div class="offer-content reveal">
+
+        <span class="eyebrow">A MOMENT WORTH SHARING</span>
+
+        <h2>
+            Your first MELORA<br>
+            <em>moment is on us.</em>
+        </h2>
+
+        <p>
+            Join the MELORA circle and receive 15% off
+            your first collection.
+        </p>
+
+        <button class="luxury-btn gold-btn" id="offerBtn">
+            CLAIM 15% OFF
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     NEWSLETTER
+========================================================= -->
+
+<section class="newsletter-section">
+
+    <div class="newsletter-inner">
+
+        <span class="eyebrow">THE MELORA LETTER</span>
+
+        <h2>
+            A little sweetness,<br>
+            <em>delivered occasionally.</em>
+        </h2>
+
+        <form id="newsletterForm" class="newsletter-form">
+
+            <input
+                id="newsletterEmail"
+                type="email"
+                placeholder="Your email address"
+                required
+            >
+
+            <button type="submit">
+                JOIN
+            </button>
+
+        </form>
+
+        <small id="newsletterMessage"></small>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="section faq-section" id="faq">
+
+    <div class="section-heading reveal">
+
+        <span class="eyebrow">QUESTIONS</span>
+
+        <h2>
+            Frequently<br>
+            <em>asked.</em>
+        </h2>
+
+    </div>
+
+    <div class="faq-list">
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                How should I store MELORA?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                Store your chocolate in a cool, dry place away
+                from direct sunlight and strong aromas.
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Do you offer gift packaging?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                Yes. Every collection can be prepared as a
+                premium gift with a personalised message.
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Can I create a custom box?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                Yes. Use the Create Your MELORA section to
+                customise the box and add it to your cart.
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button class="faq-question">
+                Is this a real checkout?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                This website contains a fully functional frontend
+                demo checkout. No real payment is processed.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-inner">
+
+        <div class="contact-copy reveal">
+
+            <span class="eyebrow">CONTACT MELORA</span>
+
+            <h2>
+                Let's create a<br>
+                <em>moment.</em>
+            </h2>
+
+            <p>
+                Questions, collaborations, gifting or simply
+                want to say hello?
+            </p>
+
+            <div class="contact-details">
+
+                <a href="mailto:hello@melora.example">
+                    hello@melora.example
+                </a>
+
+                <a href="tel:+10000000000">
+                    +1 000 000 0000
+                </a>
+
+            </div>
+
+        </div>
+
+        <form class="contact-form" id="contactForm">
+
+            <input
+                type="text"
+                id="contactName"
+                placeholder="Your name"
+                required
+            >
+
+            <input
+                type="email"
+                id="contactEmail"
+                placeholder="Your email"
+                required
+            >
+
+            <textarea
+                id="contactMessage"
+                placeholder="Tell us about your moment..."
+                rows="5"
+                required
+            ></textarea>
+
+            <button class="luxury-btn gold-btn" type="submit">
+                SEND MESSAGE
+            </button>
+
+            <div id="contactStatus"></div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">MELORA</div>
+
+            <p>
+                Made to Melt Moments.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <div>
+                <h4>EXPLORE</h4>
+                <a href="#experience">Experience</a>
+                <a href="#collection">Collection</a>
+                <a href="#story">Our Story</a>
+            </div>
+
+            <div>
+                <h4>DISCOVER</h4>
+                <a href="#ingredients">Ingredients</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#faq">FAQ</a>
+            </div>
+
+            <div>
+                <h4>CONNECT</h4>
+                <a href="#contact">Contact</a>
+                <a href="#" id="footerLogin">Account</a>
+                <a href="#home">Back to top</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 MELORA</span>
+        <span>CRAFTED FOR MOMENTS</span>
+    </div>
+
+</footer>
+
+<!-- =========================================================
+     SEARCH MODAL
+========================================================= -->
+
+<div class="modal" id="searchModal">
+
+    <div class="modal-box search-box">
+
+        <button class="modal-close" data-close="searchModal">×</button>
+
+        <span class="eyebrow">SEARCH MELORA</span>
+
+        <h2>Find your <em>moment.</em></h2>
+
+        <input
+            id="searchInput"
+            type="search"
+            placeholder="Search chocolate, flavours..."
+        >
+
+        <div id="searchResults"></div>
+
+    </div>
+
+</div>
+
+<!-- =========================================================
+     PRODUCT QUICK VIEW
+========================================================= -->
+
+<div class="modal" id="productModal">
+
+    <div class="modal-box product-modal-box">
+
+        <button class="modal-close" data-close="productModal">×</button>
+
+        <div class="quick-product-visual" id="quickProductVisual">
+            <div class="product-pack">
+                <small>MELORA</small>
+                <strong>CHOCOLATE</strong>
+            </div>
+        </div>
+
+        <div class="quick-product-content">
+
+            <span class="eyebrow">MELORA COLLECTION</span>
+
+            <h2 id="quickProductName">
+                Midnight 72%
+            </h2>
+
+            <p id="quickProductDescription">
+                Deep cocoa, toasted notes and an elegant finish.
+            </p>
+
+            <strong id="quickProductPrice">$24</strong>
+
+            <button class="luxury-btn gold-btn" id="quickAddButton">
+                ADD TO CART
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================================================
+     CART DRAWER
+========================================================= -->
+
+<aside class="drawer" id="cartDrawer">
+
+    <div class="drawer-header">
+        <h2>Your Cart</h2>
+        <button class="drawer-close" data-drawer="cartDrawer">×</button>
+    </div>
+
+    <div class="drawer-content" id="cartItems"></div>
+
+    <div class="cart-summary">
+
+        <div>
+            <span>Subtotal</span>
+            <strong id="cartSubtotal">$0</strong>
+        </div>
+
+        <button class="luxury-btn gold-btn" id="checkoutButton">
+            CHECKOUT
+        </button>
+
+    </div>
+
+</aside>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+<!-- =========================================================
+     WISHLIST DRAWER
+========================================================= -->
+
+<aside class="drawer" id="wishlistDrawer">
+
+    <div class="drawer-header">
+        <h2>Wishlist</h2>
+        <button class="drawer-close" data-drawer="wishlistDrawer">×</button>
+    </div>
+
+    <div class="drawer-content" id="wishlistItems"></div>
+
+</aside>
+
+<!-- =========================================================
+     PROFILE MODAL
+========================================================= -->
+
+<div class="modal" id="profileModal">
+
+    <div class="modal-box auth-box">
+
+        <button class="modal-close" data-close="profileModal">×</button>
+
+        <div id="authView">
+
+            <span class="eyebrow">MELORA ACCOUNT</span>
+
+            <h2 id="authTitle">
+                Welcome <em>back.</em>
+            </h2>
+
+            <div class="auth-tabs">
+
+                <button class="active" id="loginTab">
+                    LOGIN
+                </button>
+
+                <button id="signupTab">
+                    SIGN UP
+                </button>
+
+            </div>
+
+            <form id="authForm">
+
+                <input
+                    id="authName"
+                    type="text"
+                    placeholder="Full name"
+                    class="signup-only hidden"
+                >
+
+                <input
+                    id="authEmail"
+                    type="email"
+                    placeholder="Email address"
+                    required
+                >
+
+                <input
+                    id="authPassword"
+                    type="password"
+                    placeholder="Password"
+                    required
+                >
+
+                <button class="luxury-btn gold-btn" type="submit">
+                    <span id="authSubmitText">LOGIN</span>
+                </button>
+
+                <div id="authMessage"></div>
+
+            </form>
+
+        </div>
+
+        <div id="profileView" class="hidden">
+
+            <span class="eyebrow">YOUR MELORA</span>
+
+            <div class="profile-avatar" id="profileAvatar">
+                M
+            </div>
+
+            <h2 id="profileName">MELORA MEMBER</h2>
+
+            <p id="profileEmail"></p>
+
+            <div class="profile-stats">
+
+                <div>
+                    <strong id="profileOrders">0</strong>
+                    <span>Orders</span>
+                </div>
+
+                <div>
+                    <strong id="profileWishlist">0</strong>
+                    <span>Wishlist</span>
+                </div>
+
+                <div>
+                    <strong id="profileSpent">$0</strong>
+                    <span>Spent</span>
+                </div>
+
+            </div>
+
+            <button class="luxury-btn outline-btn" id="logoutButton">
+                LOG OUT
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================================================
+     CHECKOUT MODAL
+========================================================= -->
+
+<div class="modal" id="checkoutModal">
+
+    <div class="modal-box checkout-box">
+
+        <button class="modal-close" data-close="checkoutModal">×</button>
+
+        <span class="eyebrow">MELORA CHECKOUT</span>
+
+        <h2>
+            Complete your<br>
+            <em>moment.</em>
+        </h2>
+
+        <form id="checkoutForm">
+
+            <input
+                id="checkoutName"
+                type="text"
+                placeholder="Full name"
+                required
+            >
+
+            <input
+                id="checkoutEmail"
+                type="email"
+                placeholder="Email address"
+                required
+            >
+
+            <textarea
+                id="checkoutAddress"
+                placeholder="Delivery address"
+                rows="4"
+                required
+            ></textarea>
+
+            <select id="checkoutPayment">
+                <option value="card">Demo Card</option>
+                <option value="upi">Demo UPI</option>
+                <option value="cod">Cash on Delivery Demo</option>
+            </select>
+
+            <div class="checkout-total">
+                <span>Total</span>
+                <strong id="checkoutTotal">$0</strong>
+            </div>
+
+            <button class="luxury-btn gold-btn" type="submit">
+                PLACE DEMO ORDER
+            </button>
+
+            <div id="checkoutStatus"></div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
